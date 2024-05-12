@@ -4,7 +4,11 @@ def move(position, speed,right_wall):
     """Returns the ball's new position after one time step.
     The ball moves in straight line at the given speed.
     """
-    return position + speed 
+    new_position = position + speed
+    if new_position > right_wall:
+        new_position = right_wall
+        speed = maybe_bounce(position, speed, right_wall)
+    return new_position
 
 def maybe_bounce(position, speed, right_wall):
     """Returns the ball's new speed, which stays the same unless the ball

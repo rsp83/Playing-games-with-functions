@@ -1,4 +1,4 @@
-def move(position, speed, right_wall):
+def maybe_bounce(position, speed, right_wall):
   """Returns the ball's new position after one time step.
      The ball moves in a straight line at the given speed, bouncing off the right wall.
   """
