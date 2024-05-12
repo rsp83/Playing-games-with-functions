@@ -1,10 +1,10 @@
 """Simulates a ball's movement and collision with the edges of a screen."""
 
-def move(position, speed):
+def move(position, speed,right_wall):
     """Returns the ball's new position after one time step.
     The ball moves in straight line at the given speed.
     """
-    return position + speed
+    return position + speed 
 
 def maybe_bounce(position, speed, right_wall):
     """Returns the ball's new speed, which stays the same unless the ball
