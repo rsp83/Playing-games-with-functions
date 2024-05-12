@@ -1,0 +1,6 @@
+The ball stays on the screen, but now it’s stuck on the right wall. Instead, it should bounce off! A bounce reverses the ball’s direction and slightly reduces its speed.
+
+    Call the maybe_bounce() function inside the loop to simulate a wall bounce.
+    Store the result of the maybe_bounce() call in the ball_speed variable.
+
+Refer to the maybe_bounce() function definition in the ball.py file. A positive speed means that the ball is moving right and a negative speed means that the ball is moving left.
