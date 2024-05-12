@@ -1,0 +1,17 @@
+""" Step 1
+Stop at the right wall
+
+Tomás works on the physics engine for a game studio. A physics engine simulates events like movement, acceleration, and collision, so game objects can interact with each other.
+
+Tomás's simulation moves a ball to the right for several time steps, but then the ball disappears. What edge case did he miss? The ball is passing through the right wall!
+
+    Add a third parameter to the move() function that represents the position of the right wall.
+    Modify the move() function body to stop the ball at the right wall.
+
+The screen starts at position 0, continues for output_width units, and then ends at the right wall. That means the right wall position is equal to output_width.
+
+If the ball tries to move past the right wall, move() should just return the right wall position.
+ """
+
+
+ 
