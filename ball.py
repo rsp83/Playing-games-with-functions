@@ -14,8 +14,10 @@ def maybe_bounce(position, speed, right_wall):
     """Returns the ball's new speed, which stays the same unless the ball
     bounces off of a wall.
     """
-    if position >= right_wall:
+    while position >= right_wall:
         # Reverses direction and loses a bit of speed.
+        speed = speed * 0.75
+    else :
         speed = speed * -0.75
 
     return speed
