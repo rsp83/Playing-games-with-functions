@@ -21,3 +21,15 @@ def maybe_bounce(position, speed, right_wall):
     # Reverse direction and lose a bit of speed.
     speed = speed * -0.75
   return speed
+
+""""
+Traceback (most recent call last):
+  File "/Users/yaknayshvydshe/Git/Playing-games-with-functions/main.py", line 13, in <module>
+    ball_position = ball.move(ball_position, ball_speed, right_wall)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yaknayshvydshe/Git/Playing-games-with-functions/ball.py", line 10, in move
+    speed = maybe_bounce(position, speed)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: maybe_bounce() missing 1 required positional argument: 'right_wall'
+
+"""
