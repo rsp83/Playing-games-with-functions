@@ -5,7 +5,8 @@ import graphics
 output_width = 19
 right_wall = output_width
 ball_position = 1
-ball_speed = 5
+ball_speed = ball.maybe_bounce
+
 
 for time_step in range(100):
     # Show the ball's position at the current time step.
